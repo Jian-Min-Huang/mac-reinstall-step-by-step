@@ -1,9 +1,13 @@
-# [Portal](https://gist.github.com/Jian-Min-Huang/c0d72c89a023587c3f923fa203eaf6cd)
-
 # Backup these directories before reinstall
 * GitHub, Desktop, Downloads
 
 # [install Homebrew](https://brew.sh/index)
+```bash
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/yfr-mbp/.zprofile
+```
+```bash
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
 ```bash
 brew analytics off
 ```
