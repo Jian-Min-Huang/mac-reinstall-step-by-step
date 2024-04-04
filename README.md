@@ -22,8 +22,7 @@ brew install --cask google-chrome iterm2 1password 1password-cli font-fira-code
 brew cleanup
 ```
 
-# setup iTerm2
-* https://github.com/dracula/iterm/blob/master/INSTALL.md
+# [setup iTerm2 dracula theme](https://github.com/dracula/iterm/blob/master/INSTALL.md)
 * change iterm2 Color Presets -> import
 * change iterm2 Color Presets -> Darcula
 * change iterm2 Text Font
@@ -33,8 +32,7 @@ brew cleanup
 brew install git
 ```
 
-# install Zim
-* https://github.com/zimfw/zimfw
+# [install Zim](https://github.com/zimfw/zimfw)
 ```bash
 vi ~/.zimrc
 ```
@@ -123,7 +121,7 @@ vi ~/.vimrc
 # brew install cask second part
 ```bash
 brew update
-brew install --cask slack dropbox sourcetree postman alfred orbstack
+brew install --cask slack dropbox sourcetree postman alfred orbstack setapp
 brew cleanup
 ```
 
