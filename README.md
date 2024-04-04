@@ -1,1 +1,134 @@
-# mac-reinstall-step-by-step
+# [Portal](https://gist.github.com/Jian-Min-Huang/c0d72c89a023587c3f923fa203eaf6cd)
+
+# GitHub, Desktop, Downloads
+
+# install Homebrew
+* https://brew.sh/index
+```bash
+brew analytics off
+```
+
+# brew install cask first part
+```bash
+brew update
+brew tap homebrew/cask-fonts
+brew install --cask google-chrome iterm2 1password 1password-cli font-fira-code
+brew cleanup
+```
+
+# setup iTerm2
+* https://github.com/dracula/iterm/blob/master/INSTALL.md
+* change iterm2 Color Presets -> import
+* change iterm2 Color Presets -> Darcula
+* change iterm2 Text Font
+
+# brew install first part
+```bash
+brew install git
+```
+
+# install Zim
+* https://github.com/zimfw/zimfw
+```bash
+vi ~/.zimrc
+```
+```
+zmodule romkatv/powerlevel10k
+
+zmodule ohmyzsh/ohmyzsh -f 'lib' -s 'lib/clipboard.zsh'
+zmodule ohmyzsh/ohmyzsh -f 'plugins/ansible' -s 'plugins/ansible/ansible.plugin.zsh'
+zmodule ohmyzsh/ohmyzsh -f 'plugins/copybuffer' -s 'plugins/copybuffer/copybuffer.plugin.zsh'
+zmodule ohmyzsh/ohmyzsh -f 'plugins/common-aliases' -s 'plugins/common-aliases/common-aliases.plugin.zsh'
+zmodule ohmyzsh/ohmyzsh -f 'plugins/copypath' -s 'plugins/copypath/copypath.plugin.zsh'
+zmodule ohmyzsh/ohmyzsh -f 'plugins/docker-compose' -s 'plugins/docker-compose/docker-compose.plugin.zsh'
+zmodule ohmyzsh/ohmyzsh -f 'plugins/emoji' -s 'plugins/emoji/emoji.plugin.zsh'
+zmodule ohmyzsh/ohmyzsh -f 'plugins/git' -s 'plugins/git/git.plugin.zsh'
+zmodule ohmyzsh/ohmyzsh -f 'plugins/gitfast' -s 'plugins/gitfast/gitfast.plugin.zsh'
+zmodule ohmyzsh/ohmyzsh -f 'plugins/kubectl' -s 'plugins/kubectl/kubectl.plugin.zsh'
+zmodule ohmyzsh/ohmyzsh -f 'plugins/sudo' -s 'plugins/sudo/sudo.plugin.zsh'
+zmodule ohmyzsh/ohmyzsh -f 'plugins/terraform' -s 'plugins/terraform/terraform.plugin.zsh'
+zmodule ohmyzsh/ohmyzsh -f 'plugins/vi-mode' -s 'plugins/vi-mode/vi-mode.plugin.zsh'
+zmodule ohmyzsh/ohmyzsh -f 'plugins/z' -s 'plugins/z/z.plugin.zsh'
+```
+
+# setup .ssh
+```bash
+mkdir .ssh
+```
+
+# (optional) create new ssh key
+```bash
+ssh-keygen -t rsa -b 4096
+pbcopy < ~/.ssh/id_rsa
+```
+* create new vault to 1password
+
+# setup .ssh config
+* https://developer.1password.com/docs/ssh
+```bash
+vi ~/.zshrc
+```
+```
+export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
+```
+```bash
+mkdir -p ~/.1password && ln -s ~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock ~/.1password/agent.sock
+```
+```bash
+vi ~/.ssh/config
+```
+* export jianminhuang.pub & opennet.pub from 1password
+* open 1password Developer SSH Agent
+```
+chmod 400 ~/.ssh/jianminhuang.pub
+chmod 400 ~/.ssh/opennet.pub
+```
+```
+Host *
+    ServerAliveInterval 60
+    IdentityAgent ~/.1password/agent.sock
+
+# Jian-Min-Huang GitHub
+Host jianminhuang
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/jianminhuang.pub
+    IdentitiesOnly yes
+
+# OpenNet GitHub
+Host opennet
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/opennet.pub
+    IdentitiesOnly yes
+```
+
+# setup vim
+```
+cd ~ && git clone jianminhuang:Jian-Min-Huang/.vim.git
+cd ~ && ln -s ~/.vim/.vimrc .
+cd ~ && ln -s ~/.vim/.ideavimrc .
+vi ~/.vimrc
+```
+```
+:PlugInstall
+```
+
+# brew install cask second part
+```bash
+brew update
+brew install --cask slack dropbox sourcetree postman alfred orbstack
+brew cleanup
+```
+
+# Setapp
+* ...
+
+# SDKMAN!
+* https://sdkman.io/install
+  * java
+
+# direct
+* Jetbrains Toolbox
+  * defaults write -g ApplePressAndHoldEnabled -bool false (press yes)
+* Tunnelblick 
