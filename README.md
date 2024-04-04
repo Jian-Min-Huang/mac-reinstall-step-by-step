@@ -136,7 +136,7 @@ vi ~/.vimrc
 brew update
 ```
 ```bash
-brew install --cask slack dropbox sourcetree postman alfred orbstack setapp
+brew install --cask slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick
 ```
 ```bash
 brew cleanup
@@ -152,8 +152,3 @@ sdk list java
 ```bash
 sdk install xxx
 ```
-
-# direct
-* Jetbrains Toolbox
-  * defaults write -g ApplePressAndHoldEnabled -bool false (press yes)
-* Tunnelblick 
