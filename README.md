@@ -3,7 +3,7 @@
 
 # [install Homebrew](https://brew.sh/index)
 ```bash
-(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/yfr-mbp/.zprofile
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> ~/.zprofile
 ```
 ```bash
 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -145,9 +145,13 @@ brew cleanup
 # Setapp
 * ...
 
-# SDKMAN!
-* https://sdkman.io/install
-  * java
+# [SDKMAN!](https://sdkman.io/install)
+```bash
+sdk list java
+```
+```bash
+sdk install xxx
+```
 
 # direct
 * Jetbrains Toolbox
