@@ -63,12 +63,13 @@ mkdir .ssh
 # (optional) create new ssh key
 ```bash
 ssh-keygen -t rsa -b 4096
+```
+```bash
 pbcopy < ~/.ssh/id_rsa
 ```
 * create new vault to 1password
 
-# setup .ssh config
-* https://developer.1password.com/docs/ssh
+# [setup .ssh config](https://developer.1password.com/docs/ssh)
 ```bash
 vi ~/.zshrc
 ```
@@ -78,14 +79,16 @@ export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agen
 ```bash
 mkdir -p ~/.1password && ln -s ~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock ~/.1password/agent.sock
 ```
-```bash
-vi ~/.ssh/config
-```
 * export jianminhuang.pub & opennet.pub from 1password
 * open 1password Developer SSH Agent
-```
+```bash
 chmod 400 ~/.ssh/jianminhuang.pub
+```
+```bash
 chmod 400 ~/.ssh/opennet.pub
+```
+```bash
+vi ~/.ssh/config
 ```
 ```
 Host *
@@ -108,10 +111,16 @@ Host opennet
 ```
 
 # setup vim
-```
+```bash
 cd ~ && git clone jianminhuang:Jian-Min-Huang/.vim.git
+```
+```bash
 cd ~ && ln -s ~/.vim/.vimrc .
+```
+```bash
 cd ~ && ln -s ~/.vim/.ideavimrc .
+```
+```bash
 vi ~/.vimrc
 ```
 ```
@@ -121,7 +130,11 @@ vi ~/.vimrc
 # brew install cask second part
 ```bash
 brew update
+```
+```bash
 brew install --cask slack dropbox sourcetree postman alfred orbstack setapp
+```
+```bash
 brew cleanup
 ```
 
