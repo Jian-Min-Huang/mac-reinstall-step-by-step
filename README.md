@@ -136,7 +136,7 @@ vi ~/.vimrc
 brew update
 ```
 ```bash
-brew install --cask slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick
+brew install --cask slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick discord figma mongodb-compass
 ```
 ```bash
 brew cleanup
@@ -151,4 +151,15 @@ sdk list java
 ```
 ```bash
 sdk install xxx
+```
+
+# [NVM](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+nvm ls-remote --lts
+```
+```bash
+nvm install xxx
+```
+```bash
+nvm alias default xxx
 ```
