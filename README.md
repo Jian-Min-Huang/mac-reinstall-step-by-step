@@ -1,9 +1,9 @@
 # [Portal](https://gist.github.com/Jian-Min-Huang/c0d72c89a023587c3f923fa203eaf6cd)
 
-# GitHub, Desktop, Downloads
+# Backup these directories before reinstall
+* GitHub, Desktop, Downloads
 
-# install Homebrew
-* https://brew.sh/index
+# [install Homebrew](https://brew.sh/index)
 ```bash
 brew analytics off
 ```
@@ -11,8 +11,14 @@ brew analytics off
 # brew install cask first part
 ```bash
 brew update
+```
+```bash
 brew tap homebrew/cask-fonts
+```
+```bash
 brew install --cask google-chrome iterm2 1password 1password-cli font-fira-code
+```
+```bash
 brew cleanup
 ```
 
