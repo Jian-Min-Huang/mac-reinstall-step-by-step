@@ -136,7 +136,7 @@ vi ~/.vimrc
 brew update
 ```
 ```bash
-brew install --cask slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick discord figma mongodb-compass
+brew install --cask slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick discord figma mongodb-compass obsidian
 ```
 ```bash
 brew cleanup
