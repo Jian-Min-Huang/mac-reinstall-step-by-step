@@ -43,8 +43,6 @@ vi ~/.zimrc
 ```
 zmodule romkatv/powerlevel10k
 
-#
-zmodule ohmyzsh/ohmyzsh -f 'lib' -s 'lib/clipboard.zsh'
 # this plugin adds the ctrl-o keyboard shortcut to copy the current text in the command line to the system clipboard
 zmodule ohmyzsh/ohmyzsh -f 'plugins/copybuffer' -s 'plugins/copybuffer/copybuffer.plugin.zsh'
 # common alias alias
