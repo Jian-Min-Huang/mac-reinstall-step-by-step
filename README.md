@@ -44,7 +44,6 @@ vi ~/.zimrc
 zmodule romkatv/powerlevel10k
 
 zmodule ohmyzsh/ohmyzsh -f 'lib' -s 'lib/clipboard.zsh'
-zmodule ohmyzsh/ohmyzsh -f 'plugins/ansible' -s 'plugins/ansible/ansible.plugin.zsh'
 zmodule ohmyzsh/ohmyzsh -f 'plugins/copybuffer' -s 'plugins/copybuffer/copybuffer.plugin.zsh'
 zmodule ohmyzsh/ohmyzsh -f 'plugins/common-aliases' -s 'plugins/common-aliases/common-aliases.plugin.zsh'
 zmodule ohmyzsh/ohmyzsh -f 'plugins/copypath' -s 'plugins/copypath/copypath.plugin.zsh'
@@ -54,7 +53,6 @@ zmodule ohmyzsh/ohmyzsh -f 'plugins/git' -s 'plugins/git/git.plugin.zsh'
 zmodule ohmyzsh/ohmyzsh -f 'plugins/gitfast' -s 'plugins/gitfast/gitfast.plugin.zsh'
 zmodule ohmyzsh/ohmyzsh -f 'plugins/kubectl' -s 'plugins/kubectl/kubectl.plugin.zsh'
 zmodule ohmyzsh/ohmyzsh -f 'plugins/sudo' -s 'plugins/sudo/sudo.plugin.zsh'
-zmodule ohmyzsh/ohmyzsh -f 'plugins/terraform' -s 'plugins/terraform/terraform.plugin.zsh'
 zmodule ohmyzsh/ohmyzsh -f 'plugins/vi-mode' -s 'plugins/vi-mode/vi-mode.plugin.zsh'
 zmodule ohmyzsh/ohmyzsh -f 'plugins/z' -s 'plugins/z/z.plugin.zsh'
 ```
@@ -153,7 +151,7 @@ sdk list java
 sdk install xxx
 ```
 
-# [NVM](https://github.com/nvm-sh/nvm#installing-and-updating)
+# [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 ```bash
 nvm ls-remote --lts
 ```
