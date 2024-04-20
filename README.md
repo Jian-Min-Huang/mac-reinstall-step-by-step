@@ -44,6 +44,8 @@ zmodule ohmyzsh/ohmyzsh -f 'plugins/copybuffer' -s 'plugins/copybuffer/copybuffe
 zmodule ohmyzsh/ohmyzsh -f 'plugins/common-aliases' -s 'plugins/common-aliases/common-aliases.plugin.zsh'
 # copies the path of given directory or file to the system clipboard
 zmodule ohmyzsh/ohmyzsh -f 'plugins/copypath' -s 'plugins/copypath/copypath.plugin.zsh'
+# dependency of copypath
+zmodule ohmyzsh/ohmyzsh -f 'lib' -s 'lib/clipboard.zsh'
 # docker-compose alias
 zmodule ohmyzsh/ohmyzsh -f 'plugins/docker-compose' -s 'plugins/docker-compose/docker-compose.plugin.zsh'
 # git alias
