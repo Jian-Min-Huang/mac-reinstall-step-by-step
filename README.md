@@ -62,9 +62,11 @@ zmodule ohmyzsh/ohmyzsh -f 'plugins/vi-mode' -s 'plugins/vi-mode/vi-mode.plugin.
 zmodule ohmyzsh/ohmyzsh -f 'plugins/z' -s 'plugins/z/z.plugin.zsh'
 ```
 
-# [setup iTerm2 dracula theme](https://github.com/dracula/iterm/blob/master/INSTALL.md)
-* change iterm2 Color Presets -> import
-* change iterm2 Color Presets -> Darcula
+# setup iTerm2 dracula theme
+* (optional)
+  * [download dracula theme](https://github.com/dracula/iterm/blob/master/INSTALL.md)
+  * change iterm2 Color Presets -> import
+* change iterm2 Color Presets -> Dracula or Solarized Light
 * change iterm2 Text Font
 
 # setup .ssh
@@ -133,7 +135,7 @@ cd ~ && ln -s ~/.vim/.vimrc .
 cd ~ && ln -s ~/.vim/.ideavimrc .
 ```
 ```bash
-vi ~/.vimrc
+vi ~/.vim/plugin/airline.vim
 ```
 ```
 :PlugInstall
