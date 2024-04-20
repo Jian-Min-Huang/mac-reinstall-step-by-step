@@ -26,11 +26,6 @@ brew install --cask google-chrome iterm2 1password 1password-cli font-fira-code
 brew cleanup
 ```
 
-# [setup iTerm2 dracula theme](https://github.com/dracula/iterm/blob/master/INSTALL.md)
-* change iterm2 Color Presets -> import
-* change iterm2 Color Presets -> Darcula
-* change iterm2 Text Font
-
 # brew install first part
 ```bash
 brew install git
@@ -64,6 +59,11 @@ zmodule ohmyzsh/ohmyzsh -f 'plugins/vi-mode' -s 'plugins/vi-mode/vi-mode.plugin.
 # this plugin defines the z command that tracks your most visited directories and allows you to access them with very few keystrokes
 zmodule ohmyzsh/ohmyzsh -f 'plugins/z' -s 'plugins/z/z.plugin.zsh'
 ```
+
+# [setup iTerm2 dracula theme](https://github.com/dracula/iterm/blob/master/INSTALL.md)
+* change iterm2 Color Presets -> import
+* change iterm2 Color Presets -> Darcula
+* change iterm2 Text Font
 
 # setup .ssh
 ```bash
