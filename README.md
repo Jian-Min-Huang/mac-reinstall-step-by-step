@@ -7,6 +7,8 @@
 ```
 ```bash
 eval "$(/opt/homebrew/bin/brew shellenv)"
+or
+eval "$(/usr/local/bin/brew shellenv)"
 ```
 ```bash
 brew analytics off
