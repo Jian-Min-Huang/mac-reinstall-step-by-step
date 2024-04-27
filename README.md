@@ -162,7 +162,7 @@ brew cleanup
 sdk list java
 ```
 ```bash
-sdk install xxx
+sdk install java xxx
 ```
 
 # [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
