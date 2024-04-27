@@ -85,7 +85,7 @@ pbcopy < ~/.ssh/id_rsa
 ```
 * create new vault to 1password
 
-# [setup .ssh config](https://developer.1password.com/docs/ssh)
+# setup .ssh config
 ```bash
 vi ~/.zshrc
 ```
