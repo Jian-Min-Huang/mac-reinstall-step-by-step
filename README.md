@@ -154,12 +154,12 @@ brew install --cask slack dropbox sourcetree postman alfred orbstack setapp jetb
 brew cleanup
 ```
 
-# brew install first part
+# brew install second part
 ```bash
 brew update
 ```
 ```bash
-brew install awscli
+brew install awscli jq
 ```
 ```bash
 brew cleanup
