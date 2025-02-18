@@ -148,7 +148,7 @@ vi ~/.vim/plugin/airline.vim
 brew update
 ```
 ```bash
-brew install --cask slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick discord figma mongodb-compass obsidian redisinsight
+brew install --cask slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick discord figma mongodb-compass obsidian redisinsight chatgpt
 ```
 ```bash
 brew cleanup
@@ -159,7 +159,7 @@ brew cleanup
 brew update
 ```
 ```bash
-brew install awscli jq
+brew install awscli jq wrk
 ```
 ```bash
 brew cleanup
