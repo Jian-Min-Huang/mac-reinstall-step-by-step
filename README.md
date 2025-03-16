@@ -134,6 +134,9 @@ cd ~ && git clone jianminhuang:Jian-Min-Huang/.vim.git
 cd ~ && ln -s ~/.vim/.vimrc .
 ```
 ```bash
+cd ~ && ln -s ~/.vim/.vscodevimrc .
+```
+```bash
 cd ~ && ln -s ~/.vim/.ideavimrc .
 ```
 ```bash
