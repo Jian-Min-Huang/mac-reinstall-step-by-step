@@ -22,7 +22,7 @@ brew update
 brew tap homebrew/cask-fonts
 ```
 ```bash
-brew install --cask google-chrome iterm2 1password 1password-cli font-fira-code
+brew install --cask google-chrome 1password 1password-cli font-fira-code
 ```
 ```bash
 brew cleanup
@@ -151,7 +151,7 @@ vi ~/.vim/plugin/airline.vim
 brew update
 ```
 ```bash
-brew install --cask slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick discord figma mongodb-compass obsidian redisinsight chatgpt visual-studio-code@insiders
+brew install --cask slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick discord figma mongodb-compass redisinsight chatgpt visual-studio-code@insiders ollama
 ```
 ```bash
 brew cleanup
