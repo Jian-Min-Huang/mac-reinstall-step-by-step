@@ -1,43 +1,54 @@
 # Backup these directories before reinstall
-* GitHub, Desktop, Downloads
 
-# [install Homebrew](https://brew.sh/index)
+- GitHub, Desktop, Downloads
+
+## [install Homebrew](https://brew.sh/index)
+
 ```bash
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> ~/.zprofile
 ```
+
 ```bash
 eval "$(/opt/homebrew/bin/brew shellenv)"
 or
 eval "$(/usr/local/bin/brew shellenv)"
 ```
+
 ```bash
 brew analytics off
 ```
 
-# brew install cask first part
+## brew install cask first part
+
 ```bash
 brew update
 ```
+
 ```bash
 brew tap homebrew/cask-fonts
 ```
+
 ```bash
 brew install --cask google-chrome 1password 1password-cli font-fira-code
 ```
+
 ```bash
 brew cleanup
 ```
 
-# brew install first part
+## brew install first part
+
 ```bash
 brew install git
 ```
 
-# [install Zim](https://github.com/zimfw/zimfw)
+## [install Zim](https://github.com/zimfw/zimfw)
+
 ```bash
 vi ~/.zimrc
 ```
-```
+
+```plaintext
 zmodule romkatv/powerlevel10k
 
 # this plugin adds the ctrl-o keyboard shortcut to copy the current text in the command line to the system clipboard
@@ -64,49 +75,54 @@ zmodule ohmyzsh/ohmyzsh -f 'plugins/vi-mode' -s 'plugins/vi-mode/vi-mode.plugin.
 zmodule ohmyzsh/ohmyzsh -f 'plugins/z' -s 'plugins/z/z.plugin.zsh'
 ```
 
-# setup iTerm2 dracula theme
-* (optional)
-  * [download dracula theme](https://github.com/dracula/iterm/blob/master/INSTALL.md)
-  * change iterm2 Color Presets -> import
-* change iterm2 Color Presets -> Dracula or Solarized Light
-* change iterm2 Text Font
+## setup .ssh
 
-# setup .ssh
 ```bash
 mkdir .ssh
 ```
 
-# (optional) create new ssh key
+## (optional) create new ssh key
+
 ```bash
 ssh-keygen -t rsa -b 4096
 ```
+
 ```bash
 pbcopy < ~/.ssh/id_rsa
 ```
-* create new vault to 1password
 
-# setup .ssh config
+- create new vault to 1password
+
+## setup .ssh config
+
 ```bash
 vi ~/.zshrc
 ```
-```
+
+```plaintext
 export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
 ```
+
 ```bash
 mkdir -p ~/.1password && ln -s ~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock ~/.1password/agent.sock
 ```
-* export jianminhuang.pub & opennet.pub from 1password
-* open 1password Developer SSH Agent
+
+- export jianminhuang.pub & opennet.pub from 1password
+- open 1password Developer SSH Agent
+
 ```bash
 chmod 400 ~/.ssh/jianminhuang.pub
 ```
+
 ```bash
 chmod 400 ~/.ssh/opennet.pub
 ```
+
 ```bash
 vi ~/.ssh/config
 ```
-```
+
+```plaintext
 Host *
     ServerAliveInterval 60
     IdentityAgent ~/.1password/agent.sock
@@ -126,66 +142,84 @@ Host opennet
     IdentitiesOnly yes
 ```
 
-# setup vim
+## setup vim
+
 ```bash
 cd ~ && git clone jianminhuang:Jian-Min-Huang/.vim.git
 ```
+
 ```bash
 cd ~ && ln -s ~/.vim/.vimrc .
 ```
+
 ```bash
 cd ~ && ln -s ~/.vim/.vscodevimrc .
 ```
+
 ```bash
 cd ~ && ln -s ~/.vim/.ideavimrc .
 ```
+
 ```bash
 vi ~/.vim/plugin/airline.vim
 ```
-```
+
+```bash
 :PlugInstall
 ```
 
-# brew install cask second part
+## brew install cask second part
+
 ```bash
 brew update
 ```
+
 ```bash
-brew install --cask slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick discord figma mongodb-compass redisinsight chatgpt visual-studio-code@insiders ollama lm-studio dbeaver-community
+brew install --cask slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick discord figma mongodb-compass redisinsight chatgpt visual-studio-code@insiders ollama lm-studio dbeaver-community claude
 ```
+
 ```bash
 brew cleanup
 ```
 
-# brew install second part
+## brew install second part
+
 ```bash
 brew update
 ```
+
 ```bash
 brew install awscli jq wrk
 ```
+
 ```bash
 brew cleanup
 ```
 
-# Setapp
-* ...
+## Setapp
 
-# [SDKMAN!](https://sdkman.io/install)
+- ...
+
+## [SDKMAN!](https://sdkman.io/install)
+
 ```bash
 sdk list java
 ```
+
 ```bash
 sdk install java xxx
 ```
 
-# [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
 ```bash
 nvm ls-remote --lts
 ```
+
 ```bash
 nvm install xxx
 ```
+
 ```bash
 nvm alias default xxx
 ```
