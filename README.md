@@ -189,7 +189,7 @@ brew update
 ```
 
 ```bash
-brew install awscli jq wrk
+brew install awscli jq wrk coreutils
 ```
 
 ```bash
@@ -222,4 +222,12 @@ nvm install xxx
 
 ```bash
 nvm alias default xxx
+```
+
+## [uv](https://docs.astral.sh/uv/getting-started/installation/)
+
+```bash
+uv python install 3.11 3.12
+uv python pin 3.11
+uv venv
 ```
