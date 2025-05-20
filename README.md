@@ -226,6 +226,8 @@ nvm alias default xxx
 
 ## [uv](https://docs.astral.sh/uv/getting-started/installation/)
 
+- need `coreutils` installed
+
 ```bash
 uv python install 3.11 3.12
 uv python pin 3.11
