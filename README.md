@@ -189,7 +189,7 @@ brew update
 ```
 
 ```bash
-brew install awscli jq wrk coreutils
+brew install awscli jq wrk coreutils gh
 ```
 
 ```bash
@@ -222,6 +222,12 @@ nvm install xxx
 
 ```bash
 nvm alias default xxx
+```
+
+## npm
+
+```shell
+npm install -g @anthropic-ai/claude-code
 ```
 
 ## [uv](https://docs.astral.sh/uv/getting-started/installation/)
