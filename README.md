@@ -25,7 +25,7 @@ brew update
 ```
 
 ```bash
-brew tap homebrew/cask-fonts
+brew tap homebrew/cask
 ```
 
 ```bash
