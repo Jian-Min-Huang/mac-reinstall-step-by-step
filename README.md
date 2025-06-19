@@ -25,10 +25,6 @@ brew update
 ```
 
 ```bash
-brew tap homebrew/cask
-```
-
-```bash
 brew install --cask google-chrome 1password 1password-cli font-fira-code
 ```
 
