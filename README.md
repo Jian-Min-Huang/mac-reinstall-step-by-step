@@ -185,7 +185,7 @@ brew update
 ```
 
 ```bash
-brew install awscli jq wrk coreutils gh
+brew install awscli jq wrk coreutils gh opencc
 ```
 
 ```bash
