@@ -220,12 +220,6 @@ nvm install xxx
 nvm alias default xxx
 ```
 
-## npm
-
-```shell
-npm install -g @anthropic-ai/claude-code
-```
-
 ## [uv](https://docs.astral.sh/uv/getting-started/installation/)
 
 - need `coreutils` installed
