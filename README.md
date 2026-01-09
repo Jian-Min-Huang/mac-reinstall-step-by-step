@@ -5,16 +5,6 @@
 ## [install Homebrew](https://brew.sh/index)
 
 ```bash
-(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> ~/.zprofile
-```
-
-```bash
-eval "$(/opt/homebrew/bin/brew shellenv)"
-or
-eval "$(/usr/local/bin/brew shellenv)"
-```
-
-```bash
 brew analytics off
 ```
 
@@ -25,7 +15,7 @@ brew update
 ```
 
 ```bash
-brew install --cask google-chrome 1password 1password-cli font-fira-code
+brew install --cask google-chrome 1password
 ```
 
 ```bash
