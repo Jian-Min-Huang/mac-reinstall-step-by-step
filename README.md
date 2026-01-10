@@ -163,7 +163,7 @@ brew update
 ```
 
 ```bash
-brew install --cask slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick discord figma mongodb-compass redisinsight visual-studio-code@insiders dbeaver-community claude cursor raycast claude-code codex copilot-cli gemini-cli vlc
+brew install --cask slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick discord figma mongodb-compass redisinsight visual-studio-code@insiders dbeaver-community claude cursor raycast claude-code codex vlc
 ```
 
 ```bash
@@ -177,7 +177,7 @@ brew update
 ```
 
 ```bash
-brew install awscli jq wrk coreutils gh opencc
+brew install awscli jq wrk coreutils gh opencc copilot-cli gemini-cli
 ```
 
 ```bash
