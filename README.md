@@ -177,7 +177,7 @@ brew update
 ```
 
 ```bash
-brew install awscli jq wrk python gh opencc copilot-cli gemini-cli
+brew install awscli jq wrk gh opencc copilot-cli gemini-cli
 ```
 
 ```bash
