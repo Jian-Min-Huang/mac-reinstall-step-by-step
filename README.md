@@ -177,7 +177,7 @@ brew update
 ```
 
 ```bash
-brew install awscli jq wrk coreutils gh opencc copilot-cli gemini-cli
+brew install awscli jq wrk python gh opencc copilot-cli gemini-cli
 ```
 
 ```bash
@@ -210,14 +210,4 @@ nvm install xxx
 
 ```bash
 nvm alias default xxx
-```
-
-## [uv](https://docs.astral.sh/uv/getting-started/installation/)
-
-- need `coreutils` installed
-
-```bash
-uv python install 3.11 3.12
-uv python pin 3.11
-uv venv
 ```
