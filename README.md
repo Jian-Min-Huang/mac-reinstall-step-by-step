@@ -15,7 +15,7 @@ brew update
 ```
 
 ```bash
-brew install --cask google-chrome 1password
+brew install --cask google-chrome 1password font-fira-code
 ```
 
 ```bash
