@@ -37,24 +37,10 @@ vi ~/.zimrc
 ```plaintext
 zmodule romkatv/powerlevel10k
 
-# this plugin adds the ctrl-o keyboard shortcut to copy the current text in the command line to the system clipboard
-zmodule ohmyzsh/ohmyzsh -f 'plugins/copybuffer' -s 'plugins/copybuffer/copybuffer.plugin.zsh'
 # common alias alias
 zmodule ohmyzsh/ohmyzsh -f 'plugins/common-aliases' -s 'plugins/common-aliases/common-aliases.plugin.zsh'
-# copies the path of given directory or file to the system clipboard
-zmodule ohmyzsh/ohmyzsh -f 'plugins/copypath' -s 'plugins/copypath/copypath.plugin.zsh'
-# dependency of copypath
-zmodule ohmyzsh/ohmyzsh -f 'lib' -s 'lib/clipboard.zsh'
 # docker-compose alias
 zmodule ohmyzsh/ohmyzsh -f 'plugins/docker-compose' -s 'plugins/docker-compose/docker-compose.plugin.zsh'
-# git alias
-zmodule ohmyzsh/ohmyzsh -f 'plugins/git' -s 'plugins/git/git.plugin.zsh'
-# this plugin adds completion for Git, using the zsh completion from git.git folks, which is much faster than the official one from zsh
-zmodule ohmyzsh/ohmyzsh -f 'plugins/gitfast' -s 'plugins/gitfast/gitfast.plugin.zsh'
-# kubectl alias
-zmodule ohmyzsh/ohmyzsh -f 'plugins/kubectl' -s 'plugins/kubectl/kubectl.plugin.zsh'
-# easily prefix your current or previous commands with sudo by pressing esc twice
-zmodule ohmyzsh/ohmyzsh -f 'plugins/sudo' -s 'plugins/sudo/sudo.plugin.zsh'
 # command line vi mode
 zmodule ohmyzsh/ohmyzsh -f 'plugins/vi-mode' -s 'plugins/vi-mode/vi-mode.plugin.zsh'
 # this plugin defines the z command that tracks your most visited directories and allows you to access them with very few keystrokes
