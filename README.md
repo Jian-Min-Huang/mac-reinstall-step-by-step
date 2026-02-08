@@ -184,6 +184,14 @@ sdk list java
 sdk install java xxx
 ```
 
+```bash
+sdk list maven
+```
+
+```bash
+sdk install maven xxx
+```
+
 ## [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
 ```bash
