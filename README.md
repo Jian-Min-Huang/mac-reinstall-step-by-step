@@ -163,7 +163,7 @@ brew update
 ```
 
 ```bash
-brew install cmake awscli jq wrk gh opencc copilot-cli
+brew install cmake awscli jq wrk gh opencc copilot-cli agent-browser
 ```
 
 ```bash
