@@ -163,7 +163,7 @@ brew update
 ```
 
 ```bash
-brew install awscli jq wrk gh opencc copilot-cli
+brew install cmake awscli jq wrk gh opencc copilot-cli
 ```
 
 ```bash
@@ -207,4 +207,9 @@ nvm alias default xxx
 ```
 
 ## [install uv](https://docs.astral.sh/uv/#installation)
+
+## AppStore
+
+- line
+- xcode
 
