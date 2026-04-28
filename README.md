@@ -149,7 +149,7 @@ brew update
 ```
 
 ```bash
-brew install --cask obs slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick discord figma mongodb-compass redisinsight visual-studio-code@insiders dbeaver-community claude codex raycast claude-code vlc ollama-app
+brew install --cask obs slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick discord figma mongodb-compass redisinsight visual-studio-code@insiders dbeaver-community claude codex raycast claude-code vlc ollama-app claudebar
 ```
 
 ```bash
@@ -204,6 +204,10 @@ nvm install xxx
 
 ```bash
 nvm alias default xxx
+```
+
+```bash
+nvm install --reinstall-packages-from=current 'lts/krypton' && nvm alias default 'lts/krypton'
 ```
 
 ## [install uv](https://docs.astral.sh/uv/#installation)
