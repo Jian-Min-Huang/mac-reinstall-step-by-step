@@ -149,7 +149,7 @@ brew update
 ```
 
 ```bash
-brew install --cask obs slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick discord figma mongodb-compass redisinsight visual-studio-code@insiders dbeaver-community claude codex raycast claude-code vlc ollama-app
+brew install --cask obs slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick discord figma mongodb-compass redisinsight visual-studio-code@insiders dbeaver-community claude codex raycast claude-code vlc ollama-app visual-studio-code lm-studio
 ```
 
 ```bash
@@ -215,5 +215,4 @@ nvm install --reinstall-packages-from=current 'lts/krypton' && nvm alias default
 ## AppStore
 
 - line
-- xcode
 
