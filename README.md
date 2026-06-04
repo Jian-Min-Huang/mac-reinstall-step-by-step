@@ -149,7 +149,7 @@ brew update
 ```
 
 ```bash
-brew install --cask obs slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick discord figma mongodb-compass redisinsight visual-studio-code@insiders dbeaver-community claude codex raycast claude-code vlc ollama-app visual-studio-code lm-studio
+brew install --cask obs slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick discord figma mongodb-compass redisinsight visual-studio-code@insiders dbeaver-community claude codex codex-app raycast claude-code vlc ollama-app visual-studio-code lm-studio
 ```
 
 ```bash
