@@ -167,6 +167,11 @@ brew install cmake awscli jq wrk gh opencc agent-browser eza yt-dlp
 ```
 
 ```bash
+brew tap atlassian/homebrew-acli
+brew install acli
+```
+
+```bash
 brew cleanup
 ```
 
