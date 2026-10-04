@@ -64,7 +64,7 @@ ssh-keygen -t rsa -b 4096
 ```
 
 ```bash
-pbcopy < ~/.ssh/id_rsa
+pbcopy < ~/.ssh/id_rsa.pub
 ```
 
 - create new vault to 1password
@@ -151,7 +151,7 @@ brew update
 ```
 
 ```bash
-brew install --cask obs slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick discord figma mongodb-compass redisinsight visual-studio-code@insiders dbeaver-community claude codex raycast claude-code vlc ollama-app visual-studio-code lm-studio chatgpt lens
+brew install --cask obs slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick discord figma mongodb-compass redisinsight visual-studio-code@insiders dbeaver-community claude codex raycast claude-code vlc visual-studio-code lm-studio chatgpt lens
 ```
 
 ```bash
@@ -216,6 +216,8 @@ nvm install --lts=krypton
 ```bash
 nvm alias default xxx
 ```
+
+## [PI Agent](https://pi.dev/docs/latest/quickstart)
 
 ## [install uv](https://docs.astral.sh/uv/#installation)
 
