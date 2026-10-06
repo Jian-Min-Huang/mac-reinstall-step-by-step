@@ -165,7 +165,7 @@ brew update
 ```
 
 ```bash
-brew install cmake awscli jq wrk gh opencc agent-browser eza yt-dlp
+brew install cmake awscli jq wrk gh opencc agent-browser eza yt-dlp trash
 ```
 
 ```bash
