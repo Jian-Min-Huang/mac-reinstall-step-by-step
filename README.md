@@ -151,7 +151,7 @@ brew update
 ```
 
 ```bash
-brew install --cask obs slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick discord figma mongodb-compass redisinsight visual-studio-code@insiders dbeaver-community claude codex raycast claude-code vlc visual-studio-code lm-studio chatgpt lens
+brew install --cask obs slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick discord figma mongodb-compass redisinsight visual-studio-code@insiders dbeaver-community claude codex raycast claude-code vlc visual-studio-code lm-studio chatgpt lens tailscale-app
 ```
 
 ```bash
@@ -225,3 +225,20 @@ nvm alias default xxx
 
 - line
 
+## disable ssh password login
+
+```bash
+sudo vi /etc/ssh/sshd_config.d/01-keyonly.conf
+```
+
+```text
+PubkeyAuthentication yes
+PasswordAuthentication no
+KbdInteractiveAuthentication no
+AuthenticationMethods publickey
+```
+
+```bash
+sudo /usr/sbin/sshd -t
+sudo /usr/sbin/sshd -T | grep -Ei 'pubkeyauthentication|passwordauthentication|kbdinteractiveauthentication|authenticationmethods'
+```
