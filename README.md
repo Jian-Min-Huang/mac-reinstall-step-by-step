@@ -248,3 +248,34 @@ sudo /usr/sbin/sshd -t
 ```bash
 sudo /usr/sbin/sshd -T | grep -Ei 'pubkeyauthentication|passwordauthentication|kbdinteractiveauthentication|authenticationmethods'
 ```
+
+## .gitconfig
+
+```text
+[includeIf "hasconfig:remote.*.url:git@github.com:Jian-Min-Huang/**"]
+    path = ~/.gitconfig-personal
+[includeIf "hasconfig:remote.*.url:git@github.com:PureFuncInc/**"]
+    path = ~/.gitconfig-personal
+[includeIf "hasconfig:remote.*.url:git@github.com:Vincent-Huang-OpenNet/**"]
+    path = ~/.gitconfig-sporty
+[includeIf "hasconfig:remote.*.url:git@github.com:opennetltd/**"]
+    path = ~/.gitconfig-sporty
+```
+
+```text
+[user]
+	name = Vincent Huang
+	email = yfr.huang@hotmail.com
+
+[core]
+  sshCommand = ssh -i ~/.ssh/jianminhuang.pub -o IdentitiesOnly=yes
+```
+
+```text
+[user]
+	name = Vincent Huang
+	email = vincent.huang@opennet.tw
+
+[core]
+  sshCommand = ssh -i ~/.ssh/opennet.pub -o IdentitiesOnly=yes
+```
