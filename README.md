@@ -170,6 +170,9 @@ brew install cmake awscli jq wrk gh opencc agent-browser eza yt-dlp trash
 
 ```bash
 brew tap atlassian/homebrew-acli
+```
+
+```bash
 brew install acli
 ```
 
@@ -240,5 +243,8 @@ AuthenticationMethods publickey
 
 ```bash
 sudo /usr/sbin/sshd -t
+```
+
+```bash
 sudo /usr/sbin/sshd -T | grep -Ei 'pubkeyauthentication|passwordauthentication|kbdinteractiveauthentication|authenticationmethods'
 ```
