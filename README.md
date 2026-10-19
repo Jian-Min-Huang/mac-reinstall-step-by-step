@@ -34,7 +34,7 @@ brew install git
 vi ~/.zimrc
 ```
 
-```plaintext
+```text
 zmodule romkatv/powerlevel10k
 
 # common alias alias
@@ -57,14 +57,26 @@ zmodule ohmyzsh/ohmyzsh -f 'plugins/z' -s 'plugins/z/z.plugin.zsh'
 mkdir .ssh
 ```
 
-## (optional) create new ssh key
+## (optional) create new rsa ssh key
 
 ```bash
-ssh-keygen -t rsa -b 4096
+ssh-keygen -t rsa -b 4096 -C "abc@xyz.com"
 ```
 
 ```bash
 pbcopy < ~/.ssh/id_rsa.pub
+```
+
+- create new vault to 1password
+
+## (optional) create new ed25519 ssh key
+
+```bash
+ssh-keygen -t ed25519 -C "abc@xyz.com" -f ~/.ssh/id_ed25519
+```
+
+```bash
+pbcopy < ~/.ssh/id_ed25519.pub
 ```
 
 - create new vault to 1password
@@ -75,20 +87,16 @@ pbcopy < ~/.ssh/id_rsa.pub
 vi ~/.zshrc
 ```
 
-```plaintext
-export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
+```bash
+echo 'export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock' >> ~/.zshrc
 ```
 
 ```bash
 mkdir -p ~/.1password && ln -s ~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock ~/.1password/agent.sock
 ```
 
-- export jianminhuang.pub & opennet.pub from 1password
+- export opennet.pub from 1password
 - open 1password Developer SSH Agent
-
-```bash
-chmod 400 ~/.ssh/jianminhuang.pub
-```
 
 ```bash
 chmod 400 ~/.ssh/opennet.pub
@@ -98,24 +106,23 @@ chmod 400 ~/.ssh/opennet.pub
 vi ~/.ssh/config
 ```
 
-```plaintext
+```text
 Host *
     ServerAliveInterval 60
+
+# Redis Bastion
+Host redis-bastion
+    HostName 172.31.71.172
+    User vincent.huang
     IdentityAgent ~/.1password/agent.sock
-
-# Jian-Min-Huang GitHub
-Host jianminhuang
-    HostName github.com
-    User git
-    IdentityFile ~/.ssh/jianminhuang.pub
-    IdentitiesOnly yes
-
-# OpenNet GitHub
-Host opennet
-    HostName github.com
-    User git
     IdentityFile ~/.ssh/opennet.pub
     IdentitiesOnly yes
+
+Host github.com
+    User git
+    IdentityAgent none
+    IdentitiesOnly yes
+    UseKeychain yes
 ```
 
 ## setup vim
@@ -257,9 +264,9 @@ sudo /usr/sbin/sshd -T | grep -Ei 'pubkeyauthentication|passwordauthentication|k
 [includeIf "hasconfig:remote.*.url:git@github.com:PureFuncInc/**"]
     path = ~/.gitconfig-personal
 [includeIf "hasconfig:remote.*.url:git@github.com:Vincent-Huang-OpenNet/**"]
-    path = ~/.gitconfig-sporty
+    path = ~/.gitconfig-opennet
 [includeIf "hasconfig:remote.*.url:git@github.com:opennetltd/**"]
-    path = ~/.gitconfig-sporty
+    path = ~/.gitconfig-opennet
 ```
 
 ```text
@@ -268,7 +275,7 @@ sudo /usr/sbin/sshd -T | grep -Ei 'pubkeyauthentication|passwordauthentication|k
 	email = yfr.huang@hotmail.com
 
 [core]
-  sshCommand = ssh -i ~/.ssh/jianminhuang.pub -o IdentitiesOnly=yes
+  sshCommand = ssh -i ~/.ssh/github_personal_ed25519.pub -o IdentitiesOnly=yes
 ```
 
 ```text
@@ -277,5 +284,5 @@ sudo /usr/sbin/sshd -T | grep -Ei 'pubkeyauthentication|passwordauthentication|k
 	email = vincent.huang@opennet.tw
 
 [core]
-  sshCommand = ssh -i ~/.ssh/opennet.pub -o IdentitiesOnly=yes
+  sshCommand = ssh -i ~/.ssh/github_opennet_ed25519.pub -o IdentitiesOnly=yes
 ```
