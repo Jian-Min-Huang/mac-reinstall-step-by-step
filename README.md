@@ -275,7 +275,7 @@ sudo /usr/sbin/sshd -T | grep -Ei 'pubkeyauthentication|passwordauthentication|k
 	email = yfr.huang@hotmail.com
 
 [core]
-  sshCommand = ssh -i ~/.ssh/github_personal_ed25519.pub -o IdentitiesOnly=yes
+	sshCommand = ssh -i ~/.ssh/github_personal_ed25519.pub -o IdentitiesOnly=yes
 ```
 
 ```text
@@ -284,5 +284,5 @@ sudo /usr/sbin/sshd -T | grep -Ei 'pubkeyauthentication|passwordauthentication|k
 	email = vincent.huang@opennet.tw
 
 [core]
-  sshCommand = ssh -i ~/.ssh/github_opennet_ed25519.pub -o IdentitiesOnly=yes
+	sshCommand = ssh -i ~/.ssh/github_opennet_ed25519.pub -o IdentitiesOnly=yes
 ```
