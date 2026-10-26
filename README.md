@@ -158,7 +158,7 @@ brew update
 ```
 
 ```bash
-brew install --cask obs slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick discord figma mongodb-compass redisinsight visual-studio-code@insiders dbeaver-community claude codex raycast claude-code vlc visual-studio-code lm-studio chatgpt lens tailscale-app
+brew install --cask obs slack dropbox sourcetree postman alfred orbstack setapp jetbrains-toolbox tunnelblick discord figma mongodb-compass redisinsight visual-studio-code@insiders dbeaver-community claude codex raycast claude-code vlc visual-studio-code lm-studio chatgpt lens tailscale-app jump-desktop-connect
 ```
 
 ```bash
@@ -172,7 +172,7 @@ brew update
 ```
 
 ```bash
-brew install cmake awscli jq wrk gh opencc agent-browser eza yt-dlp trash
+brew install cmake awscli jq wrk gh opencc agent-browser eza yt-dlp trash tig
 ```
 
 ```bash
